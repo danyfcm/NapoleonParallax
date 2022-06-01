@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
 
-    <div class="napoleon">
+    <div class="container">
         <div class="parallax-wrap">
             
             <img src="img/Napoleon crossing the alps Napoleon.png"> 
             <img src="img/Napoleon crossing the alps Napoleon Capa.png"> 
             <img src="img/Napoleon crossing the alps Soldados.png">
-            <img src="img/Napoleon crossing the alps Pedra1.png">
+            <img src="img/Napoleon crossing the alps Pedra 1.png">
             <img src="img/Napoleon crossing the alps Pedra 2.png">
 
         </div>
@@ -25,14 +26,17 @@
 
 <script>
 
-    document.querySelectorAll(".parallax-wrap").forEach(parallaxWrap =>
-        
-        parallaxWrap.addEventListener("mousemove", ({ clientX, clientY }) => { 
-            parallaxWrap.style.setProperty("--x", clientX);
-            parallaxWrap.style.setProperty("--y", clientY);
-        }),
+    $('.container').on('mouseenter', function() {
+        document.querySelectorAll(".parallax-wrap").forEach(parallaxWrap =>
+            
+            parallaxWrap.addEventListener("mousemove", ({ clientX, clientY }) => { 
+                parallaxWrap.style.setProperty("--x", clientX);
+                parallaxWrap.style.setProperty("--y", clientY);
+            }),
 
-    );
+        );
+    });
+
 
 </script>
 </html>

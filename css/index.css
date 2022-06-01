@@ -43,7 +43,7 @@ body {
 }
 
 .parallax-wrap img:nth-child(1) {
-    --shift: 3;
+    --shift: 7;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +51,7 @@ body {
 }
 
 .parallax-wrap img:nth-child(2) {
-    --shift: 3;
+    --shift: 7;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,7 +59,7 @@ body {
 }
 
 .parallax-wrap img:nth-child(3) {
-    --shift: 3;
+    --shift: 4;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -67,23 +67,30 @@ body {
 }
 
 .parallax-wrap img:nth-child(4) {
-    --shift: 3;
+    --shift: 8;
+    --x: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    left: 23.9vw;
+    left: -1.1vw;
 }
 
 .parallax-wrap img:nth-child(5) {
-    --shift: 5;
+    --shift: 9;
+    --x: 0; 
     display: block;
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
-    left: 23.9vw;
+    left: -1.1vw;
+    bottom: -12vh;
+    
 }
 
-.napoleon{
-    display: block;
+.container {
+    width: 50vw;
+    margin: 0 auto;
+    border: 2px solid black;
+    display: flex;
 }
