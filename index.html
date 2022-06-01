@@ -9,30 +9,30 @@
 </head>
 <body>
 
-    <div class="parallax-wrap">
-        <img class="napoleon" src="img/Napoleon crossing the alps background.png">
-        <span value="50"> <img  src="img/Napoleon crossing the alps Napoleon.png"> </span>
-        <span value="5"> <img src="img/Napoleon crossing the alps Napoleon Capa.png"> </span>
-        <span value="30"> <img src="img/Napoleon crossing the alps Soldados.png"> </span>
+    <div class="napoleon">
+        <div class="parallax-wrap">
+            
+            <img src="img/Napoleon crossing the alps Napoleon.png"> 
+            <img src="img/Napoleon crossing the alps Napoleon Capa.png"> 
+            <img src="img/Napoleon crossing the alps Soldados.png">
+            <img src="img/Napoleon crossing the alps Pedra1.png">
+            <img src="img/Napoleon crossing the alps Pedra 2.png">
 
+        </div>
     </div>
     
 </body>
 
 <script>
 
-    document.addEventListener("mousemove", parallax);
+    document.querySelectorAll(".parallax-wrap").forEach(parallaxWrap =>
+        
+        parallaxWrap.addEventListener("mousemove", ({ clientX, clientY }) => { 
+            parallaxWrap.style.setProperty("--x", clientX);
+            parallaxWrap.style.setProperty("--y", clientY);
+        }),
 
-    function parallax(event) {
-        this.querySelectorAll(".parallax-wrap span").forEach((shift) => {
-            const position = shift.getAttribute("value");
-            const x = (window.innerWidth - event.pageX * position) / 90;
-            const y = (window.innerHeight - event.pageY * position) / 90;
+    );
 
-            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        });
-    }
-
-    
 </script>
 </html>

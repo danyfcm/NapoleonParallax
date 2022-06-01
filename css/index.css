@@ -1,7 +1,19 @@
+:root {
+    --shift: 0;
+    --x: 0;
+    --y: 0;
+}
+
 body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
+    background-color: rgb(105, 93, 70);
+    background-image: url('../img/Napoleon\ crossing\ the\ alps\ background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50% 100%;
 }
 
 * {
@@ -21,33 +33,57 @@ body {
     align-items: center;
 }
 
-.napoleon  {
+.parallax-wrap img {
+    --shift-px: calc(var(--shift) * 1px);
+    --size: 50vw;
     position: absolute;
-    height: 100%;
-    width:  43%;
-    z-index: 2;
+    height: var(--size);
+    width: var(--size);
+    transform: translateX(calc((100vw - var(--x) * var(--shift-px)) / 90)) translateY(calc((100vh - var(--y) * var(--shift-px)) / 90));
 }
 
-.parallax-wrap span {
-    position: absolute;
-    height: 500px;
-    width: 500px;
-}
-
-.parallax-wrap span:nth-child(1) {
-    top: 70%;
-    left: 70%;
+.parallax-wrap img:nth-child(1) {
+    --shift: 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 3;
 }
 
-.parallax-wrap span:nth-child(2) {
-    top: 60%;
-    left: 80%;
+.parallax-wrap img:nth-child(2) {
+    --shift: 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 3;
 }
 
-.parallax-wrap span:nth-child(3) {
-    top: 40%;
-    left: 60%;
-    z-index: 3;
+.parallax-wrap img:nth-child(3) {
+    --shift: 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+.parallax-wrap img:nth-child(4) {
+    --shift: 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    left: 23.9vw;
+}
+
+.parallax-wrap img:nth-child(5) {
+    --shift: 5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+    left: 23.9vw;
+}
+
+.napoleon{
+    display: block;
 }
