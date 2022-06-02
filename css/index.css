@@ -42,6 +42,7 @@ body {
     transform: translateX(calc((100vw - var(--x) * var(--shift-px)) / 90)) translateY(calc((100vh - var(--y) * var(--shift-px)) / 90));
 }
 
+/* Napoleon */
 .parallax-wrap img:nth-child(1) {
     --shift: 5;
     display: block;
@@ -50,14 +51,16 @@ body {
     z-index: 3;
 }
 
+/* Capa */
 .parallax-wrap img:nth-child(2) {
-    --shift: 5;
+    --shift: 4;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    z-index: 3;
+    z-index: 2;
 }
 
+/* Soldados */
 .parallax-wrap img:nth-child(3) {
     --shift: 8;
     display: block;
@@ -67,18 +70,21 @@ body {
     bottom: -3.3vh;
 }
 
+/* Pedra 1 */
 .parallax-wrap img:nth-child(4) {
-    --shift: 6;
+    --shift: 7;
     --x: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
     left: -1.1vw;
+    bottom: -8vh
 }
 
+/* Pedra 2 */
 .parallax-wrap img:nth-child(5) {
-    --shift: 5;
+    --shift: 6;
     --x: 0; 
     display: block;
     margin-left: auto;
