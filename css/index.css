@@ -26,7 +26,7 @@ body {
 .parallax-wrap {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
 
 /* Napoleon */
 .parallax-wrap img:nth-child(1) {
-    --shift: 5;
+    --shift: 8;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -53,7 +53,7 @@ body {
 
 /* Capa */
 .parallax-wrap img:nth-child(2) {
-    --shift: 4;
+    --shift: 7.5;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -62,17 +62,17 @@ body {
 
 /* Soldados */
 .parallax-wrap img:nth-child(3) {
-    --shift: 8;
+    --shift: 4;
     display: block;
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
-    bottom: -3.3vh;
+    bottom: -1vh;
 }
 
 /* Pedra 1 */
 .parallax-wrap img:nth-child(4) {
-    --shift: 7;
+    --shift: 8;
     --x: 0;
     display: block;
     margin-left: auto;
@@ -97,6 +97,7 @@ body {
 
 .container {
     width: 50vw;
+    height: 100vh;
     margin: 0 auto;
     border: 2px solid black;
     display: flex;
