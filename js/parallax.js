@@ -1,10 +1,14 @@
 $('.container').on('mouseenter', function () {
+
     document.querySelectorAll(".parallax-wrap").forEach(parallaxWrap =>
 
-        parallaxWrap.addEventListener("mousemove", ({ clientX, clientY }) => {
-            parallaxWrap.style.setProperty("--x", clientX);
-            parallaxWrap.style.setProperty("--y", clientY);
-        }),
+        parallaxWrap.addEventListener(
+            "mousemove", ({ layerX, layerY }) => {
+                parallaxWrap.style.setProperty("--x", layerX);
+                parallaxWrap.style.setProperty("--y", layerY);
+            }
+        ),
 
     );
+    
 });
