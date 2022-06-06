@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         <link rel="stylesheet" href="css/index.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -13,16 +12,43 @@
         <title>Napoleon</title>
     </head>
 
-    <body>
+    <body>  
+
+        <div class="options">
+
+            <form>
+                
+                <h3>Sensibilidade:</h3>
+
+                <label for="optionNapoleon">Napoleon: </label> 
+                <input type="number" id="optionNapoleon" value="8" />
+
+                <label for="optionCapa">Capa: </label> 
+                <input type="number" id="optionCapa" value="7" />
+
+                <label for="optionSoldados">Solados: </label>
+                <input type="number" id="optionSoldados" value="4" />
+                
+                <label for="optionPedra1">Pedra1: </label>
+                <input type="number" id="optionPedra1" value="8" />
+                
+                <label for="optionPedra2">Pedra2: </label>
+                <input type="number" id="optionPedra2" value="6" />
+
+            </form>
+
+            <button onclick="changeShiftDefault()">Default</button>
+
+        </div>
 
         <div class="container">
             <div class="parallax-wrap">
                 
-                <img src="img/Napoleon crossing the alps Napoleon.png"> 
-                <img src="img/Napoleon crossing the alps Napoleon Capa.png"> 
-                <img src="img/Napoleon crossing the alps Soldados.png">
-                <img src="img/Napoleon crossing the alps Pedra 1.png">
-                <img src="img/Napoleon crossing the alps Pedra 2.png">
+                <img id="imageNapoleon" src="img/Napoleon crossing the alps Napoleon.png"> 
+                <img id="imageCapa"     src="img/Napoleon crossing the alps Napoleon Capa.png"> 
+                <img id="imageSoldados" src="img/Napoleon crossing the alps Soldados.png">
+                <img id="imagePedra1"   src="img/Napoleon crossing the alps Pedra 1.png">
+                <img id="imagePedra2"   src="img/Napoleon crossing the alps Pedra 2.png">
 
             </div>
         </div>
