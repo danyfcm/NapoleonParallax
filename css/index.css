@@ -112,11 +112,12 @@ h3{
 
 /* Soldados */
 .parallax-wrap img:nth-child(3) {
-    --shift: 4;
+    --shift: 5;
     display: block;
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
+    bottom: -2vh;
 }
 
 /* Pedra 1 */

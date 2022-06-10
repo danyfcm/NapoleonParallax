@@ -38,7 +38,7 @@ function changeShiftDefault(){
     
     optionNapoleon.value = 8;
     optionCapa.value     = 7;
-    optionSoldados.value = 4;
+    optionSoldados.value = 5;
     optionPedra1.value   = 8;
     optionPedra2.value   = 6;
 
